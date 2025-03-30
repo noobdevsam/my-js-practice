@@ -12,12 +12,28 @@
     Writing into the HTML output using [document.write()].
     Writing into an alert box, using [window.alert()].
     Writing into the browser console, using [console.log()].
+
+    The [innerText] property is used when we want to change the text of an HTML element.
+
+    Using document.write() after an HTML document is loaded, will delete all existing
+     HTML:Using document.write() after an HTML document is loaded, will delete all existing HTML.
+    The document.write() method should only be used for testing.
+
+
 -->
 <div>
     <h1>JavaScript Output</h1>
     <p id="demo">This is a paragraph.</p>
     <p id="change-to-h3">This is another paragraph.</p>
 </div>
+
+<div>
+    <p id="demo2"></p>
+
+    <!-- window.print() method in the browser to print the content of the current window.-->>
+    <button onclick="window.print()">Print this page</button>
+</div>
+
 <script src="scripts/index.js"></script>
 </body>
 </html>
