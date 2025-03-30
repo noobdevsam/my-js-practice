@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+<!--
+    JavaScript can "display" data in different ways:
 
+    Writing into an HTML element, using [innerHTML] or [innerText].
+    Writing into the HTML output using [document.write()].
+    Writing into an alert box, using [window.alert()].
+    Writing into the browser console, using [console.log()].
+-->
+<div>
+    <h1>JavaScript Output</h1>
+    <p id="demo">This is a paragraph.</p>
+    <p id="change-to-h3">This is another paragraph.</p>
+</div>
+<script>
+    // Using innerHTML
+    document.getElementById("demo").innerHTML = "Hello JavaScript! changed text";
+
+    document.getElementById("change-to-h3").innerHTML = "<h3>This is a heading</h3>";
+
+    // Using document.write()
+    document.write("Hello World!");
+
+    // Using window.alert()
+    window.alert("Hello World!");
+
+    // Using console.log()
+    console.log("Hello World!");
+</script>
 </body>
 </html>
