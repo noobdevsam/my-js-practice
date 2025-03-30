@@ -7,7 +7,7 @@ document.getElementById("demo2").innerText = "This is a paragraph";
 
 // Using document.write()
 document.write("Hello World!\n");
-document.write(5 + 6);
+document.write((5 + 6).toString());
 
 // Using window.alert()
 // Specifying the [window] object is optional
