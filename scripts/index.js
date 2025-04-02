@@ -6,8 +6,8 @@ document.getElementById("change-to-h3").innerHTML = "<h3>This is a heading</h3>"
 document.getElementById("demo2").innerText = "This is a paragraph";
 
 // Using document.write()
-document.write("Hello World!\n");
-document.write((5 + 6).toString());
+// document.write("Hello World!\n");
+// document.write((5 + 6).toString());
 
 // Using window.alert()
 // Specifying the [window] object is optional
@@ -24,3 +24,14 @@ function myFunction(a, b) {
 
 // Using function with parameters
 document.getElementById("demo3").innerText = "4 * 3 = " + myFunction(4, 3);
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 55,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo4").innerText = person.fullName() + " is " + person.age + " years old.";
