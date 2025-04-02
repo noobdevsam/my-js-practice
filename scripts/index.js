@@ -15,3 +15,12 @@ window.alert("Hello World!");
 
 // Using console.log()
 console.log("Hello World!");
+
+// Using function
+// Accessing a function without () returns the function and not the function result
+function myFunction(a, b) {
+    return a * b;
+}
+
+// Using function with parameters
+document.getElementById("demo3").innerText = "4 * 3 = " + myFunction(4, 3);
